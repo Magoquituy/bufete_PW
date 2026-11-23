@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: #f5f2eb;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+} 
+
+/* Logo */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #183c32;
+    font-weight: normal;
+}
+
+.logo span {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #183c32;
+}
+
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #183c32;
+    font-size: 14px;
+}
+
+/* Botón del header */
+.boton-header {
+    background-color: #183c32;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.boton-header:hover {
+    background-color: #285747;
+}
