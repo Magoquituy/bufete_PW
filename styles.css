@@ -8,24 +8,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 24px 80px;
+    border-bottom: 1px solid #dedbd3;
 } 
 
 /* Logo */
-.logo {
+.header__logo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logo h1 {
+.header__nombre {
     margin: 0;
-    font-size: 32px;
+    font-family: Georgia, serif;
+    font-size: 30px;
     color: #183c32;
     font-weight: normal;
+    letter-spacing: 1px;
 }
 
-.logo span {
+.header__subtitulo {
     font-size: 10px;
     letter-spacing: 4px;
     color: #183c32;
@@ -33,29 +36,250 @@ body {
 
 
 /* Menú de navegación */
-nav {
+.header__nav {
     display: flex;
     gap: 35px;
 }
 
-nav a {
+.header__nav a {
     text-decoration: none;
     color: #183c32;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s;
+}
+
+.header__nav a:hover {
+    color: #8b9b79;
 }
 
 /* Botón del header */
-.boton-header {
+.header__boton {
     background-color: #183c32;
     color: #ffffff;
     text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.3s;
 }
 
 /* Efecto al pasar el cursor */
-.boton-header:hover {
+.header__boton:hover {
     background-color: #285747;
+}
+
+/* Sección principal */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 80px;
+    gap: 60px;
+}
+
+/* Contenido principal */
+.hero__titulo {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    font-weight: normal;
+    color: #183c32;
+    line-height: 1.05;
+    margin: 0 0 20px 0;
+    max-width: 950px;
+}
+
+.hero__descripcion {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #555b54;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+/* Botón principal */
+.hero__boton {
+    display: inline-block;
+    background-color: #183c32;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.hero__boton:hover {
+    background-color: #285747;
+}
+
+/* Nota debajo del botón */
+.hero__nota {
+    display: block;
+    margin-top: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #777b70;
+    letter-spacing: 0.5px;
+}
+
+/* Tarjeta derecha */
+.hero__tarjeta {
+    background-color: #dfe8bd;
+    padding: 30px 30px;
+    border-radius: 4px;
+    flex: 0 0 310px;
+}
+
+/* Título de la tarjeta */
+.hero__tarjeta-titulo {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #183c32;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
+    max-width: 240px;
+}
+
+/* Texto de la tarjeta */
+.hero__tarjeta-descripcion {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #405344;
+    line-height: 1.7;
+    margin-bottom: 45px;
+    max-width: 280px;
+}
+
+/* Enlace de la tarjeta */
+.hero__tarjeta-enlace {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #183c32;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.hero__tarjeta-enlace:hover {
+    color: #71845d;
+}
+
+/* Franja institucional */
+.franja-institucional {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: #183c32;
+    color: #f5f2eb;
+    padding: 30px 80px;
+}
+
+/* Frase institucional */
+.franja-institucional__frase {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #f5f2eb;
+    margin: 0;
+}
+
+/* Etiqueta institucional */
+.franja-institucional__etiqueta {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #dfe8bd;
+    min-width: 170px;
+}
+
+/* Áreas de práctica */
+.areas {
+    padding: 80px;
+    background-color: #f5f2eb;
+}
+
+.areas__encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 55px;
+}
+
+.areas__encabezado h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #183c32;
+    margin: 0;
+}
+
+.areas__encabezado a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #183c32;
+    text-decoration: none;
+    border-bottom: 1px solid #8b9b79;
+    padding-bottom: 7px;
+    transition: color 0.3s;
+}
+
+.areas__encabezado a:hover {
+    color: #8b9b79;
+}
+
+.areas__contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+/* Tarjetas de áreas */
+.areas__tarjeta {
+    padding: 30px 0;
+    border-top: 1px solid #c9c5ba;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.areas__tarjeta span {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #8b9b79;
+}
+
+.areas__tarjeta h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #183c32;
+    margin: 35px 0 15px;
+}
+
+.areas__tarjeta p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555b54;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.areas__tarjeta a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #183c32;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.areas__tarjeta a:hover {
+    color: #8b9b79;
 }
